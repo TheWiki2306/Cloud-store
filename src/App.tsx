@@ -6,12 +6,13 @@ import Grid from "@material-ui/core/Grid";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import  Badge  from "@material-ui/core/Badge";
 import { Wrapper } from "./App.styles";
+import CartItem from './components/CartItem/CartItem';
 
 //types
-export type ShoppingCartItems = () =>  {
+export type ShoppingCartItems =  {
   id: number;
   category: string;
-  descripion: string;
+  descripion: string; 
   image: string;
   price: number;
   title: string;
@@ -39,9 +40,15 @@ function App() {
   return <div>Error encountered</div>
    
   return (
-    <div className="App">
-      start      
-    </div>
+    <Wrapper>
+      <Grid container spacing={3}> 
+        {data?.map((item) => (
+          <Grid item key={item.id} xs={12} sm={4}> 
+            <CartItem item={item} handleAddToCart={addToCart}/>
+          </Grid>
+        ))}
+      </Grid>
+    </Wrapper>
   );
 }
 
