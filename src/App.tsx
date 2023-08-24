@@ -15,7 +15,7 @@ export type ShoppingCartItems = () =>  {
   image: string;
   price: number;
   title: string;
-  amount: number;
+  amount: number; 
 
 }
 
@@ -30,7 +30,14 @@ function App() {
   );
   console.log(data);
   
+  const addToCart = (clicked: ShoppingCartItems) => null;
 
+  if(isLoading) 
+  return <LinearProgress/>;
+
+  if(error)
+  return <div>Error encountered</div>
+   
   return (
     <div className="App">
       start      
