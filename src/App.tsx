@@ -7,11 +7,33 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import  Badge  from "@material-ui/core/Badge";
 import { Wrapper } from "./App.styles";
 
+//types
+export type ShoppingCartItems = () =>  {
+  id: number;
+  category: string;
+  descripion: string;
+  image: string;
+  price: number;
+  title: string;
+  amount: number;
+
+}
+
+const getItems = async (): Promise<ShoppingCartItems[]> => 
+  await(await fetch('https://fakestoreapi.com/products')).json();
+
 
 function App() {
+  const { data, isLoading, error } = useQuery<ShoppingCartItems[]>(
+    'products',
+    getItems
+  );
+  console.log(data);
+  
+
   return (
     <div className="App">
-      start
+      start      
     </div>
   );
 }
