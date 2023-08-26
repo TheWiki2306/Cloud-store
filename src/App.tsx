@@ -25,6 +25,10 @@ const getItems = async (): Promise<ShoppingCartItems[]> =>
 
 
 function App() {
+
+  const [cartOpen, setCartOpen] = useState(false);
+  const [cartItems, setCartItems] = useState([] as ShoppingCartItems[] );
+
   const { data, isLoading, error } = useQuery<ShoppingCartItems[]>(
     'products',
     getItems
