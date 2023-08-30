@@ -7,7 +7,9 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import  Badge  from "@material-ui/core/Badge";
 import { Wrapper, StyledButton } from "./App.styles";
 import CartItem from './components/CartItem/CartItem';
-import Cart from "./components/cart/cart";
+import Cart from "./components/cart/Cart";
+
+
 
 //types
 export type ShoppingCartItems =  {
