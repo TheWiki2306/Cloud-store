@@ -1,6 +1,5 @@
-import { Button } from "@material-ui/core";
+import  Button from "@material-ui/core/Button";
 import { ShoppingCartItems } from "../../App";
-import CartItem from "../CartItem/CartItem";
 import { Wrapper } from "./ProductCart.styles";
 
 
@@ -26,9 +25,9 @@ const ProductCart: React.FC<Props> = ({ item, addToCart, removeFromCart }) =>
                     onClick={() => removeFromCart(item.id)}>
                         -
                     </Button>
-            </div>
-            <p>{item.amount}</p>
-            <div className="buttons">
+
+                <p>{item.amount}</p>
+                
                 <Button
                     size="small"
                     disableElevation
