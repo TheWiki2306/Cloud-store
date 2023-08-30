@@ -37,7 +37,18 @@ function App() {
   );
   console.log(data);
   
-  const addToCart = (clicked: ShoppingCartItems) => null;
+  const addToCart = (clickedItem: ShoppingCartItems) => {
+    setCartItems(previous => {
+      const isItemInCart = previous.find(item => item.id === clickedItem.id)
+
+      if (isItemInCart){
+        return previous.map(item => 
+          item.id === clickedItem.id ? {...item, amount: item.amount + 1} : item);
+      }
+
+      return[...previous, {...clickedItem, amount: 1}]
+    })
+  };
 
   const fetchTotalItems = (items: ShoppingCartItems[]) => 
     items.reduce((itms: number, item) =>  itms + item.amount, 0);
@@ -62,7 +73,7 @@ function App() {
       </Drawer> 
       <StyledButton onClick={() => setCartOpen(true)}>
        <Badge badgeContent={fetchTotalItems(cartItems)} color='error'>
-        <AddShoppingCartIcon/>
+        <AddShoppingCartIcon/> 
        </Badge>
        </StyledButton>
       <Grid container spacing={3}> 
