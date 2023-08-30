@@ -8,6 +8,7 @@ import  Badge  from "@material-ui/core/Badge";
 import { Wrapper, StyledButton } from "./App.styles";
 import CartItem from './components/CartItem/CartItem';
 import Cart from "./components/cart/Cart";
+// import CircularProgress  from "@material-ui/core/CircularProgress";
 
 
 
@@ -50,10 +51,23 @@ function App() {
     })
   };
 
+  const handleRemoveFromCart = (id: number) => {
+    setCartItems(previous => (
+      previous.reduce((itms, item) => {
+        if(item.id === id) {
+          if(item.amount === 1) return itms;
+          return [...itms, {...item, amount: item.amount -1}];
+        }
+        else{
+          return [...itms, item];
+        } 
+      }, [] as ShoppingCartItems[])  
+    ))
+  }
+
   const fetchTotalItems = (items: ShoppingCartItems[]) => 
     items.reduce((itms: number, item) =>  itms + item.amount, 0);
   
-  const handleRemoveFromCart = () => null;
 
   if(isLoading) 
   return <LinearProgress/>;

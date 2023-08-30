@@ -24,6 +24,16 @@ const ProductCart: React.FC<Props> = ({ item, addToCart, removeFromCart }) =>
                     disableElevation
                     variant="contained"
                     onClick={() => removeFromCart(item.id)}>
+                        -
+                    </Button>
+            </div>
+            <p>{item.amount}</p>
+            <div className="buttons">
+                <Button
+                    size="small"
+                    disableElevation
+                    variant="contained"
+                    onClick={() => addToCart(item)}>
                         +
                     </Button>
             </div>
