@@ -77,8 +77,6 @@ function App() {
   return <div>Error encountered</div>
    
   return (
-    <Routes> 
-      <Routes> </Routes>
       <Wrapper>
         <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
           <Cart 
@@ -100,7 +98,6 @@ function App() {
           ))}
         </Grid>
       </Wrapper>
-    </Routes>
   );
 }
 
