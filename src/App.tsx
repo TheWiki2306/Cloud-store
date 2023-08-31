@@ -8,6 +8,7 @@ import  Badge  from "@material-ui/core/Badge";
 import { Wrapper, StyledButton } from "./App.styles";
 import CartItem from './components/CartItem/CartItem';
 import Cart from "./components/cart/Cart";
+import { Routes, Route } from 'react-router-dom';
 // import CircularProgress  from "@material-ui/core/CircularProgress";
 
 
@@ -76,28 +77,30 @@ function App() {
   return <div>Error encountered</div>
    
   return (
-    <Wrapper>
-      <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
+    <Routes> 
+      <Routes> </Routes>
+      <Wrapper>
+        <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
           <Cart 
             cartItems={cartItems}
             addToCart={addToCart} 
             removeFromCart={handleRemoveFromCart}
           /> 
-
-      </Drawer> 
-      <StyledButton onClick={() => setCartOpen(true)}>
-       <Badge badgeContent={fetchTotalItems(cartItems)} color='error'>
-        <AddShoppingCartIcon/> 
-       </Badge>
-       </StyledButton>
-      <Grid container spacing={3}> 
-        {data?.map((item) => (
-          <Grid item key={item.id} xs={12} sm={4}> 
-            <CartItem item={item} handleAddToCart={addToCart}/>
-          </Grid>
-        ))}
-      </Grid>
-    </Wrapper>
+        </Drawer> 
+        <StyledButton onClick={() => setCartOpen(true)}>
+          <Badge badgeContent={fetchTotalItems(cartItems)} color='error'>
+            <AddShoppingCartIcon/> 
+          </Badge>
+        </StyledButton>
+        <Grid container spacing={3}> 
+          {data?.map((item) => (
+            <Grid item key={item.id} xs={12} sm={4}> 
+              <CartItem item={item} handleAddToCart={addToCart}/>
+            </Grid>
+          ))}
+        </Grid>
+      </Wrapper>
+    </Routes>
   );
 }
 
