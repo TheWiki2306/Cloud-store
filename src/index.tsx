@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-   <BrowserRouter>
+  //  <BrowserRouter>
    <Wrapper> 
     <QueryClientProvider client={client}>
       <div>
@@ -20,6 +20,6 @@ root.render(
       </div>
     </QueryClientProvider>
     </Wrapper>
-  </BrowserRouter>
+  // </BrowserRouter>
 );
 ;

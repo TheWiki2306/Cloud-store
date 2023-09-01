@@ -9,6 +9,7 @@ import { Wrapper, StyledButton } from "./App.styles";
 import CartItem from './components/CartItem/CartItem';
 import Cart from "./components/cart/Cart";
 import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
 // import CircularProgress  from "@material-ui/core/CircularProgress";
 
 
@@ -77,6 +78,8 @@ function App() {
   return <div>Error encountered</div>
    
   return (
+    <>
+    <Home/>
       <Wrapper>
         <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
           <Cart 
@@ -98,6 +101,7 @@ function App() {
           ))}
         </Grid>
       </Wrapper>
+      </>
   );
 }
 
