@@ -1,5 +1,6 @@
 import Button from '@material-ui/core/Button';
-import { ShoppingCartItems } from '../../App';
+// import { ShoppingCartItems } from '../../App';
+import { ShoppingCartItems } from '../../pages/Home/Home';
 import { Wrapper } from './cartItem.styles';
 
 
