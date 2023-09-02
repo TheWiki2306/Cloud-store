@@ -22,6 +22,7 @@ export default function App() {
         <Route path='/cart' element={<Cart cartItems={[]} addToCart={function (clickedItem: ShoppingCartItems): void {
         } } removeFromCart={function (id: number): void {
         } }/>}/>
+
     </Routes>
     </Wrapper>
   )
