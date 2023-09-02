@@ -16,12 +16,23 @@ export default function App() {
       <nav className='navLink'>
         <Link to='/' className='link'>C-store.</Link>
         <Link to='/cart' className='link'><AddShoppingCartIcon/></Link>
+        {/* <Link to='/cartitems'></Link> */}
       </nav>
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/cart' element={<Cart cartItems={[]} addToCart={function (clickedItem: ShoppingCartItems): void {
         } } removeFromCart={function (id: number): void {
         } }/>}/>
+        <Route path="/cartitems" element={<CartItem item={{
+                  id: 0,
+                  category: "",
+                  description: "",
+                  image: "",
+                  price: 0,
+                  title: "",
+                  amount: 0
+              }} handleAddToCart={function (clicked: ShoppingCartItems): void {
+              } }/>}/> 
 
     </Routes>
     </Wrapper>
