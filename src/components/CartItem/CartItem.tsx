@@ -1,6 +1,6 @@
 import Button from '@material-ui/core/Button';
 // import { ShoppingCartItems } from '../../App';
-import { ShoppingCartItems } from '../../pages/Home/Home';
+import { ShoppingCartItems } from '../../components/products/Products';
 import { Wrapper } from './cartItem.styles';
 
 
@@ -12,7 +12,6 @@ type Props = {
  const CartItem: React.FC<Props>  = ({ item, handleAddToCart}) => (
     <Wrapper>
         <img src={item.image} alt={item.title}/>
-        {/* <p>welcome again</p> */}
         <div>
             <h3>{item.title}</h3>
             <p>{item.description}</p>

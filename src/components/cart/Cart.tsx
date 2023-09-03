@@ -1,7 +1,7 @@
 import ProductCart from "../productCart/ProductCart";
 import { Wrapper } from "./Cart.styles";
 // import { ShoppingCartItems } from "../../App"
-import { ShoppingCartItems } from "../../pages/Home/Home";
+import { ShoppingCartItems } from "../../components/products/Products";
 
 
 type Props = {
