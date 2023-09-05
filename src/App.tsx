@@ -16,8 +16,6 @@ export default function App() {
       <GlobalStyles/>
       <nav className='navLink'>
         <Link to='/' className='link'>C-store.</Link>
-        <Link to='/cart' className='link'>
-        </Link>
       </nav>
 
     
