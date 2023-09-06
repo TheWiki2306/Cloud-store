@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
 import { Container } from "./Home.styles";
-import Purpose from "../../assets/images/watch.png";
+import Purpose from "../../components/purpose/Purpose";
 // import Paper from '@material-ui/core/Paper';
 // import Image from '../../assets/images/watch.png';
 // import { styled } from "@mui/system";
 // import  Box  from "@material-ui/core/Box";
 
 
-
 export default function Home(){ 
 
     return(
         <Container>
-            <div>
-                <div className="sectionOne">
-                    <h2>Our Best</h2>
-                    <h2><span>Collections</span> Just For You.</h2>
-                    {/* <Link to='/cartitems'>Start Shopping</Link> */}
-                    {/* <Link to='/products'>products are here</Link>  */}
-                </div>
-                </div>
-            {/* <Purpose/> */}
+            
+        <div className="sectionOne">
+            <h2>Our Best</h2>
+            <h2><span>Collections</span> Just For You.</h2>
+            {/* <Link to='/cartitems'>Start Shopping</Link> */}
+            {/* <Link to='/products'>products are here</Link>  */}
+        </div>
+
+        <Purpose/>
+            
         </Container>
     )
 };
