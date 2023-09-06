@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container } from "./Home.styles";
 import Purpose from "../../components/purpose/Purpose";
+import Display from "../../components/display/Display";
 // import Paper from '@material-ui/core/Paper';
 // import Image from '../../assets/images/watch.png';
 // import { styled } from "@mui/system";
@@ -18,7 +19,7 @@ export default function Home(){
             {/* <Link to='/cartitems'>Start Shopping</Link> */}
             {/* <Link to='/products'>products are here</Link>  */}
         </div>
-
+        <Display/>
         <Purpose/>
             
         </Container>

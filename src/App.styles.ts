@@ -12,7 +12,8 @@ export const Wrapper = styled.div`
         align-items: center;
         padding-top: 1rem;
         background: url('./assets/images/iwatch.png');
-
+        width: 95%;
+        margin: 0 auto;
 
     }
 

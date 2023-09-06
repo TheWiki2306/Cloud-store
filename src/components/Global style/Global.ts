@@ -14,8 +14,6 @@ const GlobalStyles = createGlobalStyle`
         background: #F5D7DB;
         color: #ffff;
         font-family: Arial;
-        width: 95%;
-        margin: 0 auto;
         font-family: Algerian;
     }  
 
@@ -23,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
         color: black;
     }
 
-    
+
 `;
 
 export default GlobalStyles;
