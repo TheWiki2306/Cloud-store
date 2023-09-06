@@ -12,12 +12,12 @@ import { ReactComponent as Support } from '../../assets/icons/support-svgrepo-co
     <Container>
         <div>
             <h1>Why Choose Us</h1>
-            <img src={image} alt="" />
+            <img src={image} alt="watch image"  className="image"/>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Consequuntur ipsam facere delectus exercitationem sequi.
             </p>
         </div>
-        <div>
+        <div className="info">
             <article>
             <Truck className="icon"/>
                 <div>

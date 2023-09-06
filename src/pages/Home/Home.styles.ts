@@ -4,7 +4,7 @@ import IconButton from "@material-ui/core/IconButton";
 export const Container = styled.div`
     /* margin: 40px; */
     color: #473E66;
-    margin-top: 4rem;
+    margin-top: 5rem;
     
     /* color: #BD83B8; */
     /* color: #F1916D; */
