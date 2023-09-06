@@ -11,7 +11,7 @@ export const Container = styled.div`
     margin-top: 5rem;
 
     h1{
-        font-size: 2.5em;
+        font-size: 2em;
         text-align: center;
         width: 50%;
     }
@@ -28,20 +28,24 @@ export const Container = styled.div`
         margin-top: 2rem;
     }
 
-    .info{
-       
-    }
-
     article{
         display: flex;
-
+        align-items: center;
+        gap: 2rem;
+        background: #E9DCC9;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
     }
+
     .icon{
         fill: #06142E;
         width: 10%;
         height: 1.2rem;
     }
 
+    /* small{
+        color: #BD83B8;
+    } */
 
 `;
 

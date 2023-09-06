@@ -18,21 +18,21 @@ import { ReactComponent as Support } from '../../assets/icons/support-svgrepo-co
             </p>
         </div>
         <div className="info">
-            <article>
+            <article className="truck">
             <Truck className="icon"/>
                 <div>
                     <h3>Fast Delivery</h3>
                     <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, enim?</small>
                 </div>
             </article>
-            <article>
+            <article className="award">
                 <Award className="icon"/>
                 <div>
                     <h3>Fast Delivery</h3>
                     <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, enim?</small>
                 </div>
             </article>
-            <article>
+            <article className="support">
                 <Support className="icon"/>
                 <div>
                     <h3>Fast Delivery</h3>
