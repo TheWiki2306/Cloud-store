@@ -1,6 +1,7 @@
 import { Container } from "./Purpose.styles";
 // import { ShoppingCartItems } from '../../components/products/Products';
 import image from '../../assets/images/watch.png';
+// import video from '../../assets/videos/clock_-_3019 (540p).mp4';
 import { ReactComponent as Truck } from '../../assets/icons/delivery-truck-svgrepo-com.svg';
 import {ReactComponent as Award} from '../../assets/icons/medal-award-svgrepo-com.svg';
 import { ReactComponent as Support } from '../../assets/icons/support-svgrepo-com.svg';
@@ -13,6 +14,7 @@ import { ReactComponent as Support } from '../../assets/icons/support-svgrepo-co
         <div>
             <h1>Why Choose Us</h1>
             <img src={image} alt="watch image"  className="image"/>
+            {/* <video src={video}></video> */}
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Consequuntur ipsam facere delectus exercitationem sequi.
             </p>
