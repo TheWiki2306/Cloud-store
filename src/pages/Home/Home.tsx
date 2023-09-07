@@ -3,6 +3,7 @@ import { Container } from "./Home.styles";
 import Purpose from "../../components/purpose/Purpose";
 import Display from "../../components/display/Display";
 import ProductCategory from "../../components/product category/ProductCatergory";
+import Products from "../../components/products/Products";
 // import Paper from '@material-ui/core/Paper';
 // import Image from '../../assets/images/watch.png';
 // import { styled } from "@mui/system";
@@ -24,5 +25,6 @@ export default function Home(){
         <Purpose/>
         <ProductCategory/>
         </Container>
+        
     )
 };

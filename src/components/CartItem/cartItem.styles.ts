@@ -13,6 +13,18 @@ export const Wrapper = styled.div`
         border-radius: 0 0 20px 20px;
     }
 
+    button:hover{
+        background: #BD83B8;
+    }
+
+    p{
+        color: #473E66;
+    }
+
+    .add:hover{
+        color: #ffff;
+    }
+
     img{
         max-height: 250px;
         object-fit: cover;

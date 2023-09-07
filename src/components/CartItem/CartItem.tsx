@@ -17,7 +17,7 @@ type Props = {
             <p>{item.description}</p>
             <h3>${item.price}</h3>  
         </div>
-        <Button onClick={() => handleAddToCart(item)}>Add to cart</Button>
+        <Button onClick={() => handleAddToCart(item)}><p className='add'> Add to cart</p></Button>
     </Wrapper>
  )
 
