@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    display: flex;
+    /* display: flex;
     justfy-content: space-between;
     flex-direction: column;
     width: 100%;
     border: 1px solid #BD83B8;
     border-radius: 20px;
-    height: 100%
+    height: 100% */
 
+    .wrapper{
+    /* display: flex;
+    justfy-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #BD83B8;
+    border-radius: 20px;
+    height: 100% */
+    }
     button{
         /* border: red 20px; */
         border-radius: 20px 20px 20px 20px;
@@ -16,7 +25,7 @@ export const Wrapper = styled.div`
 
     button:hover{
         background: #BD83B8;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 0 0 20px 20px;
 
     }
 

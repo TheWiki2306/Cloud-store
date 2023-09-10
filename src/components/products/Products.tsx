@@ -92,14 +92,19 @@ export type ShoppingCartItems =  {
                 <AddShoppingCartIcon/> 
                 </Badge>
             </StyledButton> */}
-            <Grid container spacing={3}> 
+            {/* <Grid style={{}} container spacing={3}> 
                 {data?.map((item) => (
                 <Grid item key={item.id} xs={12} sm={4}> 
                     <CartItem item={item} handleAddToCart={addToCart}/>
             </Grid>
         ))}
-    </Grid>
+    </Grid> */}
+{
+  data?.map((item) => (
+  <CartItem item={item} handleAddToCart={addToCart}/>
 
-        </Container> 
+  ))}
+
+        </Container>
     );
 }
