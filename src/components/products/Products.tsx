@@ -99,11 +99,14 @@ export type ShoppingCartItems =  {
             </Grid>
         ))}
     </Grid> */}
-{
-  data?.map((item) => (
-  <CartItem item={item} handleAddToCart={addToCart}/>
+    <div className="itemsContainer">
+      {
+        data?.map((item) => (
+        <CartItem item={item} handleAddToCart={addToCart}/>
 
-  ))}
+        ))
+      }
+  </div>
 
         </Container>
     );

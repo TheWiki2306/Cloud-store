@@ -9,24 +9,22 @@ export const Wrapper = styled.div`
     border-radius: 20px;
     height: 100% */
 
-    .wrapper{
-    /* display: flex;
-    justfy-content: space-between;
-    flex-direction: column;
     width: 100%;
-    border: 1px solid #BD83B8;
-    border-radius: 20px;
-    height: 100% */
+
+    .wrapperContainer{
+        /* height: 100%; */
     }
+
     button{
         /* border: red 20px; */
         border-radius: 20px 20px 20px 20px;
+        padding: 1rem 7rem;
+        border: 1px #BD83B8 solid;
     }
 
     button:hover{
         background: #BD83B8;
         border-radius: 0 0 20px 20px;
-
     }
 
     p{
@@ -43,6 +41,10 @@ export const Wrapper = styled.div`
         height: 10rem;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+    }
+
+    h3{
+        /* margin-bottom: 5rem; */
     }
 
     div{
