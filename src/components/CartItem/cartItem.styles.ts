@@ -41,10 +41,13 @@ export const Wrapper = styled.div`
         height: 10rem;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+       
     }
 
     h3{
         /* margin-bottom: 5rem; */
+        font-size: 0.8em;
+        margin-bottom: 0.8rem;
     }
 
     div{

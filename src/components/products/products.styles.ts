@@ -13,8 +13,8 @@ export const Container = styled.div`
     .itemsContainer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        width: 100%;
+        /* gap: 1rem; */
+        /* width: 100%; */
     }
 `;
 

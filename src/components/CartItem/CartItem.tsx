@@ -11,16 +11,16 @@ type Props = {
 
  const CartItem: React.FC<Props>  = ({ item, handleAddToCart}) => (
     <Wrapper>
-        {/* <div className='wrapperContainer'> */}
-            <img src={item.image} alt={item.title}/>
+        <div className='wrapperContainer' onClick={() => handleAddToCart(item)}>
+                <img src={item.image} alt={item.title}/>
                 <div className='wrapper'>
                     <h3>{item.title}</h3>
                     {/* <p>{item.description}</p> */}
-                    <h3>${item.price}</h3>  
+                    <small>${item.price}</small>  
                     {/* <Button onClick={() => handleAddToCart(item)}><p className='add'> Add to cart</p></Button> */}
                 </div>
-                <Button onClick={() => handleAddToCart(item)}><p className='add'> Add to cart</p></Button>
-        {/* </div> */}
+                {/* <Button onClick={() => handleAddToCart(item)}><p className='add'> Add to cart</p></Button> */}
+        </div>
     </Wrapper>
  )
 
