@@ -5,6 +5,7 @@ import Display from "../../components/display/Display";
 import ProductCategory from "../../components/product category/ProductCatergory";
 import Products from "../../components/products/Products";
 import Reviews from "../../components/reviews/Reviews";
+import Contact from "../../components/contact/Contact";
 
 // import Paper from '@material-ui/core/Paper';
 // import Image from '../../assets/images/watch.png';
@@ -59,6 +60,7 @@ export default function Home(){
                 title: "",
                 amount: 0
             }} custname={""}/>
+            <Contact/>
         </Container>
         
     )

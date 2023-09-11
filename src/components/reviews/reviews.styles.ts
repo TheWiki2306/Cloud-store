@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     /* margin-top: 5rem; */
-    width: 50%;
+    width: 40%;
     margin: 5rem auto;
 
     h2{
