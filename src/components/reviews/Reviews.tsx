@@ -74,7 +74,11 @@ const ReviewData = [
                                         <h5>{custname}</h5>
                                     </div>
                                 </article>
-                                <img src={img1} alt="" />
+
+                                
+                                {/* <div>
+                                    <img src={img1} alt="" />
+                                </div> */}
                              </div>
                   )  })
                 
