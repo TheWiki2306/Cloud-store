@@ -3,6 +3,9 @@ import img1 from '../../assets/images/img_1.jpeg';
 import img2 from '../../assets/images/img_2.jpeg';
 import img3 from '../../assets/images/img_3.jpg'; 
 import { ShoppingCartItems } from "../products/Products";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 type Props = {
@@ -40,31 +43,44 @@ const ReviewData = [
 ]
 
 // export default function Reviews(){
- const Reviews: React.FC<Props> = ({id, image, title, description, custname}) =>{
+ const Reviews: React.FC<Props> = ({}) =>{
+
+    const sliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
+
     return(
         <Container>
-            <h3>Our Customer Say</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+            <h2>Our Customer Say</h2>
+            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perspiciatis!</p> */}
 
-            <div className="reviewsContainer">
+            <Slider className="reviewsContainer" {...sliderSettings}>
                 {
+                    
                     ReviewData.map(({ id, image, title, description, custname}) => {
                         return (
-                            <>
-                <article key={id}>
-                    <h4>{title}</h4>
-                    <small>
-                        {description}
-                    </small>
-                    <div className="profile">
-                        <img src={image} alt="" />
-                        <h5>{custname}</h5>
-                    </div>
-                </article>
-                <img src={img1} alt="" />
-                </>
-                  )  })}
-            </div>
+                            <div className="info">
+                                <article key={id}>
+                                    <h4>{title}</h4>
+                                    <small>
+                                        {description}
+                                    </small>
+                                    <div className="profile">
+                                        <img src={image} alt="" />
+                                        <h5>{custname}</h5>
+                                    </div>
+                                </article>
+                                <img src={img1} alt="" />
+                             </div>
+                  )  })
+                
+                  }
+
+            </Slider>
         </Container>
     );
 }

@@ -4,6 +4,8 @@ import Purpose from "../../components/purpose/Purpose";
 import Display from "../../components/display/Display";
 import ProductCategory from "../../components/product category/ProductCatergory";
 import Products from "../../components/products/Products";
+import Reviews from "../../components/reviews/Reviews";
+
 // import Paper from '@material-ui/core/Paper';
 // import Image from '../../assets/images/watch.png';
 // import { styled } from "@mui/system";
@@ -24,6 +26,39 @@ export default function Home(){
         <Display/>
         <Purpose/>
         <ProductCategory/>
+        <Reviews id={{
+                id: 0,
+                category: "",
+                description: "",
+                image: "",
+                price: 0,
+                title: "",
+                amount: 0
+            }} image={{
+                id: 0,
+                category: "",
+                description: "",
+                image: "",
+                price: 0,
+                title: "",
+                amount: 0
+            }} title={{
+                id: 0,
+                category: "",
+                description: "",
+                image: "",
+                price: 0,
+                title: "",
+                amount: 0
+            }} description={{
+                id: 0,
+                category: "",
+                description: "",
+                image: "",
+                price: 0,
+                title: "",
+                amount: 0
+            }} custname={""}/>
         </Container>
         
     )
