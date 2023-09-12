@@ -14,8 +14,11 @@ export const Container = styled.div`
     }
 
     .categories{
-        display: flex;
-        justify-content: space-between;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        /* justify-content: space-between; */
         width: 90%;
         margin: 0 auto;
     }
@@ -25,11 +28,26 @@ export const Container = styled.div`
         border: 1px #BD83B8 solid;
         border-radius: 2rem;
         padding: 1rem 4rem;
+        margin: 0 auto;
     }
 
     article:hover{
         background: #BD83B8;
         color: #ffff;
         transition: 0.5s ease;
+    }
+
+    @media(max-width: ${({theme}) => theme.mobile}){
+        .categories{
+            width: 50%;
+            justify-content: none;
+            /* flex: 2; */
+            /* gap: 1rem; */
+            margin: 0;
+        }
+
+        .article{
+            padding: 0;
+        }
     }
 `; 

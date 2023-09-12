@@ -47,5 +47,8 @@ export const Container = styled.div`
         color: #BD83B8;
     } */
 
+    @media(max-width: ${({theme}) => theme.mobile}){
+        width: 80%;
+    }
 `;
 

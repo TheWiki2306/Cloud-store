@@ -6,12 +6,23 @@ import Cart from './components/cart/Cart';
 import CartItem from './components/CartItem/CartItem';
 import GlobalStyles from './components/Global style/Global';
 import Home from './pages/Home/Home';
+import { ThemeProvider } from 'styled-components';
 
+
+
+const theme = {
+  laptop: '1280px',
+  tablet: '1024px',
+  mobile: '768px',
+  mobileprime: '540'
+}
 
   
 export default function App() {
   
   return(
+    <ThemeProvider theme={theme}>
+      
     <Wrapper>
       <GlobalStyles/>
       <nav className='navLink'>
@@ -37,5 +48,6 @@ export default function App() {
         <Route path='/products' element={<Products/>}/>
     </Routes>
     </Wrapper>
+    </ThemeProvider>
   )
 }

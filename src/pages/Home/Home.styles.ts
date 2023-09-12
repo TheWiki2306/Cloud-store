@@ -5,6 +5,15 @@ export const Container = styled.div`
     /* margin: 40px; */
     color: #473E66;
     margin-top: 5rem;
+
+    /* [theme.breakpoints.down("md")]: {
+  },
+  [theme.breakpoints.down("sm")]: {
+    
+  },
+  [theme.breakpoints.up("lg")]: {
+   
+  } */
     
     /* color: #BD83B8; */
     /* color: #F1916D; */
@@ -20,5 +29,14 @@ export const Container = styled.div`
     span{
         color: #BD83B8;
     }
+
+    @media(max-width: ${({theme}) => theme.mobile}){
+        .sectionOne{
+            width: 70%;
+            margin: 0 auto;
+        }
+    
+    }
+
 `;
 
