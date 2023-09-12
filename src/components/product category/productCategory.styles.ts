@@ -40,10 +40,11 @@ export const Container = styled.div`
     @media(max-width: ${({theme}) => theme.mobile}){
         .categories{
             width: 50%;
+            grid-template-columns: repeat(2, 1fr);
             justify-content: none;
             /* flex: 2; */
             /* gap: 1rem; */
-            margin: 0;
+            margin: 0 auto;
         }
 
         .article{

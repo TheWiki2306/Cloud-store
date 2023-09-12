@@ -34,4 +34,9 @@ export const Container = styled.div`
         width: 1.2rem;
         height: 1rem;
     }
+
+    @media(max-width: ${({theme}) => theme.mobile}){
+        width: 70%;
+    
+    }
 `;

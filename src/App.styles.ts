@@ -22,4 +22,9 @@ export const Wrapper = styled.div`
         font-weight: bold;
     }
 
+    @media(max-width: ${({theme}) => theme.mobile}){
+        width: 70%;
+        margin: 0;
+    }
+
 `;
