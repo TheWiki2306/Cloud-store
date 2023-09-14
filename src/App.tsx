@@ -21,7 +21,6 @@ const theme = {
 export default function App() {
   
   return(
-    <ThemeProvider theme={theme}>
       
     <Wrapper>
       <GlobalStyles/>
@@ -48,6 +47,5 @@ export default function App() {
         <Route path='/products' element={<Products/>}/>
     </Routes>
     </Wrapper>
-    </ThemeProvider>
   )
 }

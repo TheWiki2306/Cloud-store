@@ -6,6 +6,7 @@ import ProductCategory from "../../components/product category/ProductCatergory"
 import Products from "../../components/products/Products";
 import Reviews from "../../components/reviews/Reviews";
 import Contact from "../../components/contact/Contact";
+import { ThemeProvider } from 'styled-components';
 
 // import Paper from '@material-ui/core/Paper';
 // import Image from '../../assets/images/watch.png';
@@ -13,9 +14,20 @@ import Contact from "../../components/contact/Contact";
 // import  Box  from "@material-ui/core/Box";
 
 
+
+const theme = {
+    laptop: '1280px',
+    tablet: '1024px',
+    tabletprime: '912px',
+    tableprime2: '820px',
+    mobile: '768px',
+    mobileprime: '540'
+  }
+  
 export default function Home(){ 
 
     return(
+        <ThemeProvider theme={theme}>
         <Container>
             
         <div className="sectionOne">
@@ -62,6 +74,6 @@ export default function Home(){
             }} custname={""}/>
             <Contact/>
         </Container>
-        
+        </ThemeProvider>    
     )
 };

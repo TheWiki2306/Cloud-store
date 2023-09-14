@@ -37,18 +37,49 @@ export const Container = styled.div`
         transition: 0.5s ease;
     }
 
+    @media(max-width: ${({theme}) => theme.laptop}){
+        .categories{
+            /* width: 90%; */
+            margin: 0 auto;
+        }
+    }
+
+    @media(max-width: ${({theme}) => theme.tabletprime}){
+        .categories{
+            /* width: 50%; */
+            gap: 2rem;
+            margin: 0;
+        }
+
+        article{
+            /* width: 100%; */
+            /* margin: 0 auto; */
+        }
+    }
+
+    @media(max-width: ${({theme}) => theme.tableprime2}){
+        .categories{
+            /* width: 80%;/ */
+            gap: 1rem;
+            /* margin: 0 auto; */
+        }
+    }
+
     @media(max-width: ${({theme}) => theme.mobile}){
         .categories{
-            width: 50%;
+            /* width: 50%; */
             grid-template-columns: repeat(2, 1fr);
-            justify-content: none;
+            /* gap:0; */
+            width: 100%;
+            margin: 0 auto;
+            /* justify-content: none; */
             /* flex: 2; */
             /* gap: 1rem; */
-            margin: 0 auto;
+            /* margin: 0 auto; */
         }
 
         .article{
-            padding: 0;
+            /* padding: 0; */
         }
     }
 `; 

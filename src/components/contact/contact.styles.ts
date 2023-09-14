@@ -36,7 +36,16 @@ export const Container = styled.div`
     }
 
     @media(max-width: ${({theme}) => theme.mobile}){
-        width: 70%;
+        /* width: 70%; */
+        margin: 0 auto;
     
+        p{
+            width: 50%;
+            display: none;
+        }
+        
+        .links{
+            margin-top: 5rem;
+        }
     }
 `;
