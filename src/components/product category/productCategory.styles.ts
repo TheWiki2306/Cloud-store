@@ -40,8 +40,10 @@ export const Container = styled.div`
     @media(max-width: ${({theme}) => theme.laptop}){
         .categories{
             /* width: 90%; */
-            margin: 0 auto;
+            /* width: 100%; */
+            /* margin: 0; */
         }
+
     }
 
     @media(max-width: ${({theme}) => theme.tabletprime}){
