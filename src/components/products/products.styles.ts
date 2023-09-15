@@ -25,6 +25,8 @@ export const Container = styled.div`
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    
 `;
 
 export const StyledButton = styled(IconButton)`

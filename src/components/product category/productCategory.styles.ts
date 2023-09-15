@@ -88,4 +88,16 @@ export const Container = styled.div`
 
         margin-bottom: 3rem;
     }
+
+    @media(max-width: ${({theme}) => theme.reponsivemobile}){
+
+        padding: 0;
+        padding-top: 2rem;
+
+        .categories{
+            width: 90%;
+            margin: 0 auto;
+        }
+      
+    }
 `; 

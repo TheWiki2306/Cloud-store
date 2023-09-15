@@ -51,4 +51,8 @@ export const Container = styled.div`
     img{ 
         width: 10rem; 
     }
+
+    @media(max-width: ${({theme}) => theme.mobileprime}){
+        width: 70%;
+    }
 `;

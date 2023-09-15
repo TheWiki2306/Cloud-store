@@ -6,7 +6,7 @@ import { ReactComponent as Github } from "../../assets/icons/logo-github-svgrepo
 const Contact: React.FC = () => {
     return(
         <Container>
-            <h2>Get the Latest Products from us</h2>
+            <h2>Get the Latest Products</h2>
             <h5>Contact Us</h5>
             <p> ______________________________________________________________________________________________________</p>
             <div className="links">

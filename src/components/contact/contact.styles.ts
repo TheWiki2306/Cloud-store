@@ -55,4 +55,16 @@ export const Container = styled.div`
             width: 20%;
         }
     }
+
+    @media(max-width: ${({theme}) => theme.reponsivemobile}){
+        /* width: 90%; */
+        h2{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .links{
+            width: 30%;
+        }
+    }
 `;
