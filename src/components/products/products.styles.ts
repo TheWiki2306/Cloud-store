@@ -16,6 +16,15 @@ export const Container = styled.div`
         /* gap: 1rem; */
         /* width: 100%; */
     }
+
+    @media(max-width: ${({theme}) => theme.mobileprime}){
+        width: 100%;
+        margin: 0 auto;
+        
+        .itemsContainer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 `;
 
 export const StyledButton = styled(IconButton)`
@@ -24,4 +33,5 @@ export const StyledButton = styled(IconButton)`
     right: 20px;
     top: 20px;
 
-`
+ 
+`;

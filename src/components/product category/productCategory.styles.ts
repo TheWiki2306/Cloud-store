@@ -45,6 +45,7 @@ export const Container = styled.div`
     }
 
     @media(max-width: ${({theme}) => theme.tabletprime}){
+        
         .categories{
             /* width: 50%; */
             gap: 2rem;
@@ -81,5 +82,10 @@ export const Container = styled.div`
         .article{
             /* padding: 0; */
         }
+    }
+
+    @media(max-width: ${({theme}) => theme.mobileprime}){
+
+        margin-bottom: 3rem;
     }
 `; 

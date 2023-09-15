@@ -50,5 +50,31 @@ export const Container = styled.div`
     @media(max-width: ${({theme}) => theme.mobile}){
         width: 80%;
     }
+
+    @media(max-width: ${({theme}) => theme.mobileprime}){
+        display: block;
+        text-align: center;
+
+        h1{
+            text-aign: center;
+            width: 100%
+        }
+
+        img{
+            /* text-align: center; */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        p{
+            text-align: center;
+            width: 100%
+        }
+
+        .info{
+            margin-top: 3rem;
+            text-align: justify;
+        }
+    }
 `;
 

@@ -40,12 +40,19 @@ export const Container = styled.div`
         margin: 0 auto;
     
         p{
-            width: 50%;
+            /* width: 50%; */
             display: none;
         }
         
         .links{
             margin-top: 5rem;
+        }
+    }
+
+    @media(max-width: ${({theme}) => theme.mobileprime}){
+        
+        .links{
+            width: 20%;
         }
     }
 `;
