@@ -29,6 +29,8 @@ export const Container = styled.div`
         border-radius: 2rem;
         padding: 1rem 4rem;
         margin: 0 auto;
+        text-align: center;
+
     }
 
     article:hover{
@@ -97,9 +99,16 @@ export const Container = styled.div`
         padding-top: 2rem;
 
         .categories{
-            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            width: 50%;
             margin: 0 auto;
         }
       
+        article{
+            /* width: 50%; */
+            /* margin: 0; */
+            padding: 1rem 5rem;
+            /* text-align: center; */
+        }
     }
 `; 

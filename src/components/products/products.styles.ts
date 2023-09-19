@@ -26,6 +26,11 @@ export const Container = styled.div`
         }
     }
 
+    @media(max-width: ${({theme}) => theme.reponsivemobile}){
+        width: 70%;
+        margin: 0;
+    }
+
     
 `;
 
