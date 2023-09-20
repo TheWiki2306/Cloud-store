@@ -22,16 +22,6 @@ export const Container = styled.div`
         
     }
 
-    @media(max-width: ${({theme}) => theme.laptop}){
-        /* width: 90%; */
-        /* margin: auto; */
-    }
-
-    @media(max-width: ${({theme}) => theme.mobile}){
-        /* width: 100%;
-        margin: o auto; */
-    }
-
-    
+   
     
 `;

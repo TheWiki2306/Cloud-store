@@ -22,7 +22,8 @@ const theme = {
     tableprime2: '820px',
     mobile: '768px',
     mobileprime: '600px',
-    reponsivemobile: '420px'
+    reponsivemobile: '420px',
+    reponsivemobile1: '360px'
   }
   
 export default function Home(){ 

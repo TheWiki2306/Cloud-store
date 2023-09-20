@@ -38,5 +38,13 @@ export const Container = styled.div`
     
     }
 
+    @media(max-width: ${({theme}) => theme.reponsivemobile}){
+        
+        .sectionOne{
+            width: 90%;
+            margin: 0 auto;
+            
+            }
+    }
 `;
 

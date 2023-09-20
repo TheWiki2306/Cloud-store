@@ -23,8 +23,9 @@ export const Wrapper = styled.div`
     }
 
     @media(max-width: ${({theme}) => theme.mobile}){
-        width: 70%;
-        margin: 0;
+        /* width: 70%; */
+        /* margin: 0; */
     }
+
 
 `;

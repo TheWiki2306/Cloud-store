@@ -100,7 +100,7 @@ export const Container = styled.div`
 
         .categories{
             grid-template-columns: repeat(1, 1fr);
-            width: 50%;
+            width: 90%;
             margin: 0 auto;
         }
       
@@ -111,4 +111,5 @@ export const Container = styled.div`
             /* text-align: center; */
         }
     }
+
 `; 
